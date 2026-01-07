@@ -1,0 +1,5 @@
+{
+  "name": "CDM AI Navigator",
+  "description": "A comprehensive AI-powered tool for the FINOS Common Domain Model (CDM), enabling users to explore thousands of financial data fields and map legacy trade data to the CDM standard.",
+  "requestFramePermissions": []
+}

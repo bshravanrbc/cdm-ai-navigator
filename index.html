@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDM AI Navigator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Custom styles for markdown content in chat */
+        .prose-chat strong { font-weight: 700; color: inherit; }
+        .prose-chat p { margin-bottom: 0.75rem; }
+        .prose-chat p:last-child { margin-bottom: 0; }
+        .prose-chat ul { list-style-type: disc; padding-left: 1.25rem; margin-bottom: 0.75rem; }
+        .prose-chat li { margin-bottom: 0.25rem; }
+        
+        .prose-chat a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .prose-chat a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Table Styles */
+        .prose-chat table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 1rem 0; 
+            font-size: 0.85rem; 
+            line-height: 1.4;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .prose-chat th { 
+            background-color: #f8fafc; 
+            font-weight: 700; 
+            text-align: left; 
+            padding: 0.75rem; 
+            border-bottom: 2px solid #e2e8f0;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            font-size: 0.75rem;
+        }
+        .prose-chat td { 
+            padding: 0.75rem; 
+            border-bottom: 1px solid #f1f5f9; 
+            vertical-align: top;
+        }
+        .prose-chat tr:last-child td { border-bottom: none; }
+        .prose-chat tr:nth-child(even) { background-color: #fcfdfe; }
+        
+        /* Code blocks within chat */
+        .prose-chat code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Custom scrollbar */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
